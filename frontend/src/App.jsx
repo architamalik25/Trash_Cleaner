@@ -1,12 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import HowItWorks from './components/HowItWorks';
+import CTA from './components/CTA';
+import Footer from './components/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className='bg-red-500 text-amber-200 font-bold'>Hello</div>
-  )
+    <div className="bg-[#0f172a] text-white font-sans">
+      <Navbar />
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <CTA />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
+
